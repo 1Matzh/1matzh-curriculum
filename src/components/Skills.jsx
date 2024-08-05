@@ -36,6 +36,10 @@ const Skills = () => (
         <li>C++</li>
         <li>Java</li>
       </ul>
+      <span className="div-list"></span>
+      <ul className="list-unstyled">
+        <li>PHP (Cursando)</li>
+      </ul>
       <span className="div-list border-start-0"></span>
     </div>
     <div className="list p-3 border rounded">
