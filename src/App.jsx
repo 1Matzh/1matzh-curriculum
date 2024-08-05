@@ -4,6 +4,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Certificates from './components/Certificates';
+import Others from './components/Job';
 
 const App = () => (
   <div className="container mt-5">
@@ -20,6 +21,9 @@ const App = () => (
       </div>
       <div className="col-12 mb-3 p-5 rounded bg">
         <Certificates />
+      </div>
+      <div className="col-12 mb-3 p-5 rounded bg">
+        <Others />
       </div>
     </div>
   </div>
