@@ -1,0 +1,121 @@
+/* Timeline Container */
+.timeline {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    min-height: 300px;
+    
+}
+
+/* Left-aligned cards */
+.card.left {
+    padding: 30px 0 30px 30px;
+}
+
+/* Adjust border and radius for left-aligned cards */
+/* First card of the left (top) */
+.card.left-top::before {
+    left: 0;
+    top: -4.5px;
+    bottom: 0;
+    border-width: 0 0 5px 5px;
+    border-image-source: var(--border-gradient-left);
+    transform: scale(1, -1);
+}
+
+/* Second card of the left (bottom) */
+.card.left-bottom::before {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 0 0 5px;
+    border-image-source: var(--border-gradient-left);
+    transform: scale(1, -1);
+}
+
+.card.left .info .title::before {
+    left: -45px;
+}
+
+/* Right-aligned cards */
+.card.right {
+    padding: 30px 30px 30px 0;
+}
+
+/* Adjust border and radius for right-aligned cards */
+/* First card of the right (top) */
+.card.right-top::before {
+    right: 0;
+    top: -4.5px;
+    bottom: 0;
+    border-width: 5px 5px 0 0;
+    border-image-source: var(--border-gradient-right);
+}
+
+/* Second card of the right (bottom) */
+.card.right-bottom::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 0 5px 5px 0;
+    border-image-source: var(--border-gradient-right);
+}
+
+.card.right .info .title::before {
+    right: -45px;
+}
+
+/* Global ::before (common to both right and left cards) */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid transparent;
+    border-image-slice: 1;
+}
+
+/* Removing the border if it is the first card  and it's left-aligned */
+.card:first-child.left::before {
+    border-bottom: 0;
+}
+
+/* Removing the border if it is the last card  and it's left-aligned */
+.card:last-child.left::before {
+    border-top: 0;
+}
+
+/* Removing the border if it is the last card  and it's right-aligned */
+.card:last-child.right::before {
+    border-bottom: 0;
+}
+
+/* Information about the timeline */
+.info {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Title of the card */
+.title {
+    color: var(--primary-color);
+    position: relative;
+}
+
+/* Timeline dot */
+.title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid var(--primary-color);
+}
