@@ -4,7 +4,7 @@ const Resume = () => (
   <div className="mb-4">
     <h2 className="title-border">Resumo</h2>
     <p>
-      Sou Matheus Grecchi Benasse, graduado em julho de 2024 no curso de Análise e Desenvolvimento de Sistemas. Nesta dinâmica evolutiva na área tecnológica, estou realizando a pós-graduação em Inteligência Artificial e Ciência de Dados na Universidade Anhembi Morumbi. Estou em busca de uma oportunidade para ingressar no mercado de trabalho como desenvolvedor.
+      Sou um jovem graduado em Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia, estou sempre procurando novos desafios, atualizando-me com conhecimentos nessa área. Nesta dinâmica evolutiva na área tecnológica, estou realizando a pós-graduação em Inteligência Artificial e Ciência de Dados. Meu objetivo é me tornar um especialista Full Stack. Estou aberto as oportunidades e em busca de uma carreira profissional na área de tecnologia. Tenho o dinamismo e a disposição para ser um colaborador, compartilhar minhas habilidades e contribuir para o cargo que vou desempenhar, com o objetivo de efetivar resultados.
     </p>
   </div>
 );
