@@ -1,0 +1,29 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    filter: brightness(1.4);
+    color: white;
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: 900;
+}
+
+.swift-up-span {
+  display: inline-block;
+  overflow: hidden;
+  animation: .3s swift-up ease-in-out forwards;	
+}
+
+.swift-up-i {
+  font-style: normal;
+  position: relative;
+  top: var(--font-size);
+  animation: .5s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+  to {
+    top: 0;
+  }
+}

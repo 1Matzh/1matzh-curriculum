@@ -1,34 +1,27 @@
-/* Animations */
-@import url('animations/swift-up.css');
-@import url('animations/timeline.css');
+/* Sections */
+@import url('sections/welcome.css');
+@import url('sections/timeline.css');
 
 /* Fonts */
 @import url('fonts/fonts.css');
 
-:root 
-{
+:root {
     --primary-color: #FF201C;
     --background-color: #0c0c12;
-    --font-size: 20px;
 }
 
-* 
-{
+* {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body
-{
-    display: flex;
+body {
 	justify-content: center;
 	height: 100vh;
 	background-color: var(--background-color);
 }
 
-h1 
-{
-    color: var(--color-primary);
-    font-size: var(--font-size);
+section {
+    padding: 0 5%;
 }
