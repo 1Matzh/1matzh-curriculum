@@ -1,14 +1,14 @@
-window.addEventListener('scroll', function () {
-    const cards = document.querySelectorAll('.card');
+$(window).scroll(function() {
+    const cards = $('.card');
     const totalCards = cards.length;
 
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollTop = $(window).scrollTop();
+    const docHeight = $(document).height() - $(window).height();
     const scrollPercent = scrollTop / docHeight;
 
-    const scrollPerCard = 1 / totalCards;
+    const scrollPerCard = 1.2 / totalCards;
 
-    cards.forEach((card, index) => {
+    cards.each(function(index, card) {
         const start = scrollPerCard * index;
         const end = scrollPerCard * (index + 1);
         let fillPercent = 0;
@@ -19,20 +19,20 @@ window.addEventListener('scroll', function () {
             fillPercent = 100;
         }
 
-        if (card.classList.contains('left')) {
+        if ($(card).hasClass('left')) {
             const gradientLeft = `conic-gradient(
                 from 90deg, 
                 var(--primary-color) ${fillPercent}%, 
                 transparent ${fillPercent}%
             )`;
-            card.style.setProperty('--border-gradient-left', gradientLeft);
-        } else if (card.classList.contains('right')) {
+            $(card).css('--border-gradient-left', gradientLeft);
+        } else if ($(card).hasClass('right')) {
             const gradientRight = `conic-gradient(
                 from 280deg, 
                 var(--primary-color) ${fillPercent}%, 
                 transparent ${fillPercent}%
             )`;
-            card.style.setProperty('--border-gradient-right', gradientRight);
+            $(card).css('--border-gradient-right', gradientRight);
         }
     });
 });

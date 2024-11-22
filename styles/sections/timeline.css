@@ -1,0 +1,146 @@
+.timeline {
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    min-height: 300px;
+}
+
+.card.left {
+    padding: 30px 0 30px 30px;
+}
+
+.card.left-top::before {
+    left: 0;
+    top: -10px;
+    bottom: 0;
+    background-image: 
+        linear-gradient(var(--background-color), 
+        var(--background-color)), var(--border-gradient-left);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: double 5px transparent;
+
+    border-width: 0 0 10px 10px;
+    border-radius: 0 0 0 20px;
+    
+    transform: scale(1, -1);
+    z-index: -1;
+}
+
+.card.left-bottom::before {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(var(--background-color), 
+        var(--background-color)), var(--border-gradient-left);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: double 5px transparent;
+
+    border-width: 10px 0 0 10px;
+    border-radius: 20px 0 0 0;
+    
+    transform: scale(1, -1);
+    z-index: -1;
+}
+
+.card.left .info .title::before {
+    left: -55px;
+}
+
+.card.right {
+    padding: 30px 30px 30px 0;
+}
+
+.card.right-top::before {
+    right: 0;
+    top: -10px;
+    bottom: 0;
+    background-image: 
+        linear-gradient(var(--background-color), 
+        var(--background-color)), var(--border-gradient-right);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: double 5px transparent;
+
+    border-width: 10px 10px 0 0;
+    border-radius: 0 20px 0 0;
+    
+    z-index: -1;
+}
+
+.card.right-bottom::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(var(--background-color), 
+        var(--background-color)), var(--border-gradient-right);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: double 5px transparent;
+
+    border-width: 0 10px 10px 0;
+    border-radius: 0 0 20px 0;
+    
+    z-index: -1;
+}
+
+.card.right .info .title::before {
+    right: -55px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid transparent;
+    border-image-slice: 1;
+}
+
+.card:first-child.left::before {
+    border-bottom: 0;
+}
+
+.card:last-child.left::before {
+    border-top: 0;
+    border-radius: 0;
+}
+
+.card:last-child.right::before {
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.title {
+    color: var(--primary-color);
+    position: relative;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 999px;
+    border: 10px solid var(--primary-color);
+}
