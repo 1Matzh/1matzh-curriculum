@@ -10,11 +10,11 @@ const Certificates = () => (
       </li>
       <li className="ms-3 mb-3 p-3 border rounded flex-fill">
         <strong>Udemy</strong><br />
-        Aprendendo a programar em C++
+        Curso de C++ Intermediário
       </li>
       <li className="ms-3 mb-3 p-3 border rounded flex-fill">
-        <strong>Amazon Web Services (AWS)</strong><br />
-        AWS Academy Graduate - AWS Academy Cloud Foundations
+        <strong>Danki Code</strong><br />
+        Curso de PHP Completo
       </li>
     </ul>
 
@@ -24,6 +24,12 @@ const Certificates = () => (
         Cybersecurity Essentials<br />
         Introduction to Cybersecurity<br />
         Introduction to IoT
+      </li>
+      <li className="ms-3 mb-3 p-3 border rounded flex-fill">
+        <strong>Amazon Web Services (AWS)</strong><br />
+        AWS Academy Graduate<br />
+        AWS Academy Cloud Foundations<br />
+        ㅤ
       </li>
     </ul>
   </div>

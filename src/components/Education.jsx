@@ -4,6 +4,10 @@ const Education = () => (
   <div className="mb-4">
     <h2 className="title-border">Formação</h2>
     <ul>
+    <li>
+        <strong>2024 - 2025 | Universidade Anhembi Morumbi</strong><br />
+        Pós-Graduação em Inteligência Artificial e Ciência de Dados<br />
+      </li>
       <li>
         <strong>2022 - 2024 | Universidade São Judas Tadeu</strong><br />
         Graduação em Análise e Desenvolvimento de Sistemas<br />

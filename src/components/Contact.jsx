@@ -1,6 +1,6 @@
 import React from 'react';
 import { Telephone, GeoAlt, Envelope, Linkedin, Github } from 'react-bootstrap-icons';
-import LinkedinPhoto from 'https://media.licdn.com/dms/image/D4D03AQEbhKcTMvil0g/profile-displayphoto-shrink_400_400/0/1720572127328?e=1728518400&v=beta&t=iZPiJpyYigHFasJuhAB5ft4gN9hjjV6GmBvplOv8eSY';
+import LinkedinPhoto from '../assets/linkedin.jpg';
 
 const Contact = () => (
   <div className="mb-4">

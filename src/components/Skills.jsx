@@ -38,7 +38,9 @@ const Skills = () => (
       </ul>
       <span className="div-list"></span>
       <ul className="list-unstyled">
-        <li>PHP (Cursando)</li>
+        <li>PHP</li>
+        <li>Angular</li>
+        <li>Vue</li>
       </ul>
       <span className="div-list border-start-0"></span>
     </div>
